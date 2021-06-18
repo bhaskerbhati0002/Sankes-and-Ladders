@@ -29,28 +29,28 @@ pygame.draw.circle(gamewindow, grey, [550, 350], 25)
 pygame.draw.circle(gamewindow, grey, [650, 350], 25)
 
 #sounds
-die_roll=pygame.mixer.Sound("snake assets/audio/die roll.mp3")
-snake_eat=pygame.mixer.Sound("snake assets/audio/snake eating.mp3")
-ladder_climb=pygame.mixer.Sound("snake assets/audio/ladder climb.wav")
-game_win=pygame.mixer.Sound("snake assets/audio/game win.wav")
+die_roll=pygame.mixer.Sound("die roll.mp3")
+snake_eat=pygame.mixer.Sound("snake eating.mp3")
+ladder_climb=pygame.mixer.Sound("ladder climb.wav")
+game_win=pygame.mixer.Sound("game win.wav")
 
 #snakes, tokens, logo, images
-logo = pygame.image.load("snake assets/logo.PNG")
-arrow=pygame.image.load("snake assets/arrow.png")
-token_g=pygame.image.load("snake assets/greentoken.png")
-token_r=pygame.image.load("snake assets/redtoken.png")
-snake1=pygame.image.load("snake assets/snakes/s1-cutout.png")
-snake2=pygame.image.load("snake assets/snakes/s2-cutout.png")
-snake3=pygame.image.load("snake assets/snakes/s3-cutout.png")
+logo = pygame.image.load("logo.PNG")
+arrow=pygame.image.load("arrow.png")
+token_g=pygame.image.load("greentoken.png")
+token_r=pygame.image.load("redtoken.png")
+snake1=pygame.image.load("s1-cutout.png")
+snake2=pygame.image.load("s2-cutout.png")
+snake3=pygame.image.load("s3-cutout.png")
 snake3=pygame.transform.flip(snake3,True,False)
-snake6=pygame.image.load("snake assets/snakes/s6-cutout.png")
+snake6=pygame.image.load("s6-cutout.png")
 
 #ladders
-brownladder=pygame.image.load("snake assets/ladders/l1-cutout.png")
-redladder=pygame.image.load("snake assets/ladders/l2-cutout.png")
+brownladder=pygame.image.load("l1-cutout.png")
+redladder=pygame.image.load("l2-cutout.png")
 ladder1=pygame.transform.rotate(brownladder,45)
 ladder3=pygame.transform.rotate(redladder,-27)
-ladder4=pygame.image.load("snake assets/ladders/l4-cutout.png")
+ladder4=pygame.image.load("l4-cutout.png")
 
 #variables
 dictionary={4900:150, 4250:500 , 3900: 2000, 2300:350, 300:1800, 1000:2000, 2550:3550, 2750:4650}
